@@ -1,0 +1,7 @@
+- 邮箱登录、谷歌登录、扫码登录
+- 数据库鉴权
+- 字段校验
+- taidwind css
+- 共享shared、ui
+- swagger
+- ci、cd流水线
