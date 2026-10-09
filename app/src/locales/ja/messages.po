@@ -1,0 +1,60 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-10-08 19:10+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: ja\n"
+
+#: src/app/(tabs)/setting.tsx:65
+msgid "主题跟随系统设置自动切换"
+msgstr "テーマはシステムの外観設定に従います"
+
+#: src/app/(tabs)/setting.tsx:62
+msgid "外观"
+msgstr "外観"
+
+#: src/app/(tabs)/setting.tsx:67
+msgid "当前：{themeLabel}"
+msgstr "現在：{themeLabel}"
+
+#: src/app/(tabs)/index.tsx:17
+msgid "欢迎回来"
+msgstr "おかえりなさい"
+
+#: src/app/(tabs)/setting.tsx:21
+msgid "浅色"
+msgstr "ライト"
+
+#: src/app/(tabs)/setting.tsx:21
+msgid "深色"
+msgstr "ダーク"
+
+#: src/app/(tabs)/setting.tsx:32
+#: src/components/app-tabs.tsx:27
+#: src/components/app-tabs.web.tsx:31
+msgid "设置"
+msgstr "設定"
+
+#: src/app/(tabs)/setting.tsx:37
+msgid "语言"
+msgstr "言語"
+
+#: src/app/(tabs)/setting.tsx:21
+msgid "跟随系统"
+msgstr "システム"
+
+#: src/app/(tabs)/index.tsx:20
+msgid "这是应用主页，可在设置中切换语言，主题会跟随系统明暗模式。"
+msgstr "ホーム画面です。設定で言語を切り替えられます。テーマはシステムのライト/ダークに従います。"
+
+#: src/app/(tabs)/setting.tsx:40
+msgid "选择界面显示语言"
+msgstr "表示言語を選択"
+
+#: src/app/(tabs)/index.tsx:14
+#: src/components/app-tabs.tsx:19
+#: src/components/app-tabs.web.tsx:28
+msgid "首页"
+msgstr "ホーム"
