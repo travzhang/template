@@ -1,4 +1,5 @@
 import { serve } from '@hono/node-server'
+import { swaggerUI } from '@hono/swagger-ui'
 import { Hono } from 'hono'
 import { openAPIRouteHandler } from 'hono-openapi'
 import routes from './routes/index.js'
@@ -23,6 +24,8 @@ app.get(
   }),
 )
 
+app.get('/swagger', swaggerUI({ url: '/openapi.json' }))
+
 serve(
   {
     fetch: app.fetch,
@@ -30,6 +33,7 @@ serve(
   },
   (info) => {
     console.log(`Server is running on http://localhost:${info.port}`)
+    console.log(`Swagger UI: http://localhost:${info.port}/swagger`)
     console.log(`OpenAPI spec: http://localhost:${info.port}/openapi.json`)
   },
 )
