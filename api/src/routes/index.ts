@@ -43,6 +43,35 @@ const userSchema = z
   })
   .meta({ ref: 'User' })
 
+const createUserBodySchema = z.object({
+  name: z.string().min(1),
+  age: z.number().int().min(0),
+})
+
+routes.post(
+  '/users',
+  describeRoute({
+    tags: ['Users'],
+    description: 'Create a user',
+    responses: {
+      201: {
+        description: 'Created user',
+        content: {
+          'application/json': {
+            schema: resolver(userSchema),
+          },
+        },
+      },
+    },
+  }),
+  validator('json', createUserBodySchema),
+  (c) => {
+    const body = c.req.valid('json')
+    const id = crypto.randomUUID()
+    return c.json({ id, name: body.name, age: body.age }, 201)
+  },
+)
+
 routes.get(
   '/users/:id',
   describeRoute({
